@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Exercise 4-1</title>
+    <script src="js/mpg.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: auto 30px;
+        }
+        main {
+            margin-bottom: 15px;
+        }
+        main form {
+            margin-bottom: 15px;
+        }
+        main div {
+            display: flex;
+        }
+        main form div {
+            display: flex;
+            margin-top: 5px auto;
+            align-items: center;
+        }
+        main form div label {
+            text-align: right;
+            width: 10em;
+            margin: 5px;
+        }
+        main form div input {
+            width: 20em;
+            margin: 5px;
+            padding-left: 5px;
+            line-height: 25px;
+        }
+        button {
+            width: 20em;
+            padding: 3px;
+            margin: 5px;
+            margin-left: 175px;
+            line-height: 25px;
+            font-size: 87%;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Calculate Miles Per Gallon</h1>
+        <form action="" method="GET">
+            <div>
+                <label for="miles">Miles Driven:</label>
+                <input type="text" id="miles">
+                <span id="mile-entry">*</span><br>
+            </div>
+        
+            <div>
+                <label for="gallons">Gallon of gas used:</label>
+                <input type="text" id="gallons">
+                <span id="gallon-entry">*</span><br>
+            </div>
+        
+            <div>
+                <label for="mpg">Miles per gallon:</label>
+                <input type="text" id="mpg" disabled><br>
+            </div>
+        </form>
+        
+        <div>
+            <button id="calculate">Calculate MPG</button>
+        </div>
+        
+        <div>
+            <button id="clear-entries">Clear All</button>
+        </div>
+        <br>
+        <em>Thanks for your using MPG application.</em>
+    </main>    
+</body>
+</html>

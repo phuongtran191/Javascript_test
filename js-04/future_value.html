@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Exercise 4-2</title>
+    <script src="js/future_value.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: auto 30px;
+        }
+        main {
+            margin-bottom: 15px;
+        }
+        main form {
+            margin-bottom: 15px;
+        }
+        main div {
+            display: flex;
+        }
+        main form div {
+            display: flex;
+            margin-top: 5px auto;
+            align-items: center;
+        }
+        main form div label {
+            text-align: right;
+            width: 10em;
+            margin: 5px;
+        }
+        main form div input {
+            width: 20em;
+            margin: 5px;
+            padding-left: 5px;
+            line-height: 25px;
+            border: 1px solid #cacaca;
+            border-radius: 3px;
+        }
+        button {
+            width: 20em;
+            padding: 3px;
+            margin: 5px;
+            margin-left: 175px;            
+            line-height: 25px;
+            font-size: 87%;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        span {
+            color: red;
+        }
+        #rate-error {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Future Value Calculator</h1>
+        <form action="" method="GET">
+            <div>
+                <label for="investment">Total Investment:</label>
+                <input type="text" id="investment">
+                <span id="investment-error">*</span><br>
+            </div>
+        
+            <div>
+                <label for="rate">Annual Interest Rate:</label>
+                <input type="text" id="rate">
+                <span id="rate-error"> (%)</span><br>
+            </div>
+        
+            <div>
+                <label for="year">Number of Years:</label>
+                <input type="text" id="year"><br>
+                <span id="year-error">*</span><br>
+            </div>
+
+            <div>
+                <label for="future-value">Future Value:</label>
+                <input type="text" id="future-value" disabled><br>
+            </div>
+        </form>
+        
+        <div>
+            <button id="calculate">Calculate Ft-V</button>
+        </div>
+        
+        <br>
+        <em>Thanks for your using Future Value application.</em>
+    </main>    
+</body>
+</html>
