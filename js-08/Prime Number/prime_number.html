@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Exercise 8-1</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Find Prime Numbers</h1>
+        <form id="form" action="" method="GET">
+            <div>
+                <label for="number">Enter Number:</label>
+                <input type="text" id="number" autofocus>
+                <span id="number-error">*</span>
+            </div>
+        
+            <div>
+                <label for="count">Prime Count:</label>
+                <input type="text" id="count" disabled>
+            </div>
+        
+            <div>
+                <label for="prime-list">Prime Number List:</label>
+                <textarea name="prime-list" id="prime-list" rows="4" disabled></textarea>
+            </div>
+
+        </form>
+                
+        <div class="btn">
+            <button id="calculate">Calculate</button>
+            <button id="clear-entries">Clear All</button>
+        </div>
+        
+        <br>
+        <p id="date-time">&nbsp;</p>
+        <em>Thanks for your using our application.</em>
+    </main>
+    <script src="js/prime.js"></script>
+</body>
+</html>

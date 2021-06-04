@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Exercise 8-2</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Invoice Total Calculator</h1>
+        <p>Please enter two value below and click the calculate:</p>
+        <form id="form" action="" method="GET">
+            <div>
+                <label for="type">Customer Type:</label>
+                <select name="type" id="type">
+                    <option value="">Please select customer type</option>
+                    <option value="1">General Customer</option>
+                    <option value="2">Golden Customer</option>
+                    <option value="3">Platinum Customer</option>
+                </select>
+                <span id="type-error">*</span>
+            </div>
+        
+            <div>
+                <label for="subtotal">Invoice Subtotal:</label>
+                <input type="text" id="subtotal">
+                <span id="subtotal-error">*</span>
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="percent">Discount Percent:</label>
+                <input type="text" id="percent" disabled>
+                <span id="percent-unit">(%)</span>
+            </div>
+
+            <div>
+                <label for="amount">Discount Amount:</label>
+                <input type="text" id="amount" disabled>
+            </div>
+
+            <div>
+                <label for="total">Invoice Total:</label>
+                <input type="text" id="total" disabled>
+            </div>
+        </form>
+        
+        <div>
+            <button id="random-value">Random</button>
+        </div>
+
+        <div>
+            <button id="calculate">Calculate</button>
+        </div>
+        
+        <div>
+            <button id="clear-entries">Clear All</button>
+        </div>
+        <br>
+        <em>Thanks for your using our application.</em>
+    </main>
+    <script src="js/invoice.js"></script>
+</body>
+</html>
