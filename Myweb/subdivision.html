@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>TEST 1</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="js/dist/jquery.bxslider.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/dist/jquery.bxslider.min.js"></script>
+	<script src="js/subdivision.js"></script>
+    <style>
+        main {
+            width: 900px;
+            margin: 25px auto;
+        }
+        p {
+            margin-bottom: 30px;
+            line-height: 25px;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#slider").bxSlider({
+                auto: true,
+                autoControls: true,
+                captions: true,
+                slideWidth: 700,
+            });
+        });
+    </script>
+</head>
+
+<body>
+	<!-- Header Element -->
+	<header>		
+		<div class="logobranch">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<nav>
+			<ul id="nav">
+				<li><a id="home" href="index.html">Home</a></li>
+				<li><a id="subdivision" href="subdivision.html" class="active">Subdivisions</a></li>
+				<li><a id="blog" href="blog.html">Blog</a></li>
+				<li><a id="aboutus" href="about.html">About Us</a></li>
+				<li><a id="register" href="register.html">Register</a></li>
+			</ul>
+		</nav>		
+	</header>
+
+	<!-- Main Content -->
+	<main>
+        <h1>Our Construction Building</h1>
+        <p>
+            We would sincerely appreciate working on your future ventures and look forward to your association with us. In this regard I would like to personally contact you at your convenience, to explain how we could be of use to you.
+        </p>
+		<div id="slider">
+            <img src="images/subdivision1.png" alt="" title="Subdivision 1">
+            <img src="images/subdivision2.png" alt="" title="Subdivision 2">
+            <img src="images/subdivision3.png" alt="" title="Subdivision 3">
+            <img src="images/subdivision4.png" alt="" title="Subdivision 4">
+        </div>
+
+	</main>
+
+	<!-- Footer Element -->
+	<footer>
+		<p>
+			&copy; 2023 Tree Valley. All Rights Reserved.
+		</p>
+	</footer>
+</body>
+</html>

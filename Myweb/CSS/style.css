@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f3;
+}
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1e7e3;
+}
+header .logobranch {
+    margin-left: 70px;
+}
+
+header nav ul {
+    display: flex;
+    padding: 15px;
+    margin-right: 70px;
+}
+header nav ul li {
+    list-style-type: none;
+    padding-left: 2px;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 65px 20px;
+    line-height: 150px;
+}
+header nav ul li a:hover, header nav ul li a.active {
+    color: #e1e7e3;
+    background: -webkit-linear-gradient(#1bb5ac,#74cc75,#e1e7e3);
+    cursor: pointer;
+}
+main {
+    max-width: 85%;
+    margin: auto;    
+}
+main .content {
+    display: flex;
+    margin-top: 50px;
+}
+main .content h3 {
+    color: #e49e06;
+    padding-bottom: 15px;
+}
+main .content .template1 {
+    text-align: right;
+}
+main .content .template2 {
+    text-align: left;
+}
+main .content img {
+    margin: 30px;
+}
+main .content p {
+    padding-bottom: 25px;
+}
+h1 {
+    color: #e49e06;
+    padding-bottom: 15px;
+    margin-top: 25px;
+}
+p {
+    line-height: 25px;
+}
+/* Form set */
+.contact {
+    height: 56.5vh;
+}
+form {
+    margin: 10px auto;
+}
+.form_item {
+    display: flex;
+}
+.form_item label {
+    width: 6em;
+    text-align: right;
+    align-self: center;
+}
+.form_item input {
+    width: 35%;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+}
+.form_item #submit, .form_item #reset {
+    width: 11em;
+    margin-right: 40px;
+    border-radius: 0;
+}
+.form_item #submit:hover, .form_item #reset:hover {
+    cursor: pointer;
+}
+.form_item .radio {
+    width: 2em;
+    align-self: center;
+    margin-right: 6px;
+}
+span {
+    color: red;
+    padding-left: 10px;
+    align-self: center;
+}
+/* Footer set */
+footer {
+    height: 150px;
+    background: -webkit-linear-gradient(#2ac3c3,#1e819d);
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+

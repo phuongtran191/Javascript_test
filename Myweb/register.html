@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>TEST 1</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/register.js"></script>
+</head>
+
+<body>
+	<!-- Header Element -->
+	<header>
+		
+		<div class="logobranch">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<nav>
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="subdivision.html">Subdivisions</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="register.html" class="active">Register</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<!-- Main Content -->
+	<main>
+		<div class="contact">
+			<h1>Register Account</h1>
+			<form id="form_group" action="account.html" class="form_group">
+				<div class="form_item">
+					<label for="full_name">Full Name:</label>
+					<input id="full_name" type="text" name="full_name" placeholder="Enter your full name ...">
+				</div>
+				<div class="form_item">
+					<label for="gender">Gender:</label>
+					<input type="radio" name="gender" class="radio" checked> Male
+					<input type="radio" name="gender" class="radio"> Female
+				</div>
+				<div class="form_item">
+					<label for="email">Email:</label>
+					<input id="email" type="text" name="email" placeholder="Enter your email ...">
+				</div>
+				<div class="form_item">
+					<label for="user_name">User Name:</label>
+					<input id="user_name" type="text" name="user_name" placeholder="Enter your user name ...">
+				</div>
+				<div class="form_item">
+					<label for="password">Password:</label>
+					<input id="password" type="password" name="password" placeholder="Enter your password ...">
+				</div>
+
+				<div class="form_item">
+					<label for="date">Date:</label>
+					<input id="datepicker" type="text" name="date" autocomplete="off">
+				</div>
+
+				<div class="form_item">
+					<label for="">&nbsp;</label>
+					<input id="submit" type="submit" name="submit" value="Submit">
+					<input id="reset" type="reset" name="reset" value="Reset">
+				</div>
+			</form>
+		</div>
+
+	</main>
+
+	<!-- Footer Element -->
+	<footer>
+		<p>
+			&copy; 2023 Tree Valley. All Rights Reserved.
+		</p>
+	</footer>
+</body>
+</html>
